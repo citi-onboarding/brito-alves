@@ -13,9 +13,7 @@ Sýmvoulos is a credit consulting company and the goal of this project is to mak
 + [Backlog]()
 
 ## Accounts
-+ Heroku (**login:**  **password:** )
-+ Admin (**login:**  **password:** )
-+ Dropbox(**login**  **password:** )
+
 
 ## Getting Started
 
@@ -65,12 +63,6 @@ pip install -r requirements.txt
 
 create **.env** file and copy
 
-```
-SECRET_KEY = ''
-ACCESS_TOKEN = ''
-EMAIL = ''
-PASS = ''
-```
 
 Now, create the migrations
 
@@ -132,12 +124,7 @@ Development app: <https://symvoulos-teste.herokuapp.com/>
 
 ### Branches
 They can be:
-+ master
-+ develop
-+ feature
-+ bugfix
-+ hotfix
-+ release
+
 
 Their names must follow this template: `feature/branch-name`
 
