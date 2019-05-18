@@ -1,7 +1,5 @@
 # brito-alves
 
-# Symvoulos
-
 [![CITi](https://imgur.com/Hnsy4U6.png)](http://citi.org.br)
 
 Sýmvoulos is a credit consulting company and the goal of this project is to make a website that will bring more visibility to the business and, eventually, more customers.
