@@ -1,3 +1,7 @@
 from django.contrib import admin
+from core.models import AreaDeAtuacao
 
-# Register your models here.
+
+@admin.register(AreaDeAtuacao)
+class AreaDeAtuacaoAdmin(admin.ModelAdmin):
+    list_display = ("title", "order",)
