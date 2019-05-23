@@ -1,5 +1,4 @@
 from django.db import models
-from django.db import models
 
 class Associado(models.Model):
     name = models.CharField("Nome", max_length=30, null=False, blank=False)
