@@ -2,7 +2,7 @@
 
 [![CITi](https://imgur.com/Hnsy4U6.png)](http://citi.org.br)
 
-Sýmvoulos is a credit consulting company and the goal of this project is to make a website that will bring more visibility to the business and, eventually, more customers.
+One page for Brito Alves, Lapenda & Bradley.
 
 ## Links
 + [Mockup and visual ID]()
@@ -109,9 +109,9 @@ python manage.py runserver
 
 The project is deployed on Heroku with continuous deploy of branch _master_ and _develop_.
 
-Production app: <https://symvoulos.herokuapp.com/>
+Production app: <https://balb.herokuapp.com/>
 
-Development app: <https://symvoulos-teste.herokuapp.com/>
+Development app: <https://staging-balb.herokuapp.com/>
 
 ## Built With
 
