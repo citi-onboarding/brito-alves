@@ -1,7 +1,12 @@
+:root{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
 body{
     margin: 0;
 }
 
 .section{
-    border: 1px solid black;
+    border-bottom: 1px solid black;
 }
