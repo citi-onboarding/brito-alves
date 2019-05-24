@@ -1,0 +1,234 @@
+#socios {
+    position: relative;
+    width: 100%;
+    padding-bottom: 80px;
+}
+
+#socios > .dark-rectangle {
+    background-color: #3D3D3C;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 45vw;
+}
+
+#socios .dark-rectangle > .section-title {
+    margin-top: 70px;
+    padding: 7px 0 7px 19vw;
+    background-color: #737373;
+    width: 40%;
+}
+
+#socios .section-title > h2 {
+    margin: 2px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-align: right;
+    padding-right: 120px;
+    font-size: 1.5em;
+}
+
+#socios .section-title > .title-line {
+    width: 100px;
+    border-bottom: solid 2px white;
+    float: right;
+}
+
+#socios > .background-logo {
+    height: 500px;
+    position: absolute;
+    right: -190px;
+    top: -150px;
+}
+
+#socios .slick-list  {
+    margin: 0 100px;
+}
+
+#socios .socios-row {
+    padding-top: 170px;
+}
+
+#socios .socios-card {
+    align-content: center;
+}
+
+#socios .image-background {
+    margin: 0 auto;
+    height: 370px;
+    width: 270px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#socios .socios-curriculum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 300;
+    padding: 0 40px;
+    height: 100%;
+    color: transparent;
+}
+
+#socios .socios-name {
+    text-align: center;
+    width: 270px;
+    margin: 0 auto;
+    padding: 7px 0;
+    background-color: #3D3D3C;
+}
+
+#socios .socios-curriculum > p {
+    margin: 0;
+    word-wrap:break-word;
+    text-align: center;
+}
+
+#socios .socios-curriculum:hover {
+    background-color: rgba(112, 112, 112, 0.7);
+    color: white;
+}
+
+#socios .socios-name > h3 {
+    margin: 0;
+    color: white;
+}
+
+#socios .slick-dots {
+    bottom: -40px;
+}
+
+#socios .slick-dots li {
+    height: 0;
+}
+
+#socios .slick-dots li button {
+    padding: 0;
+}
+
+#socios .slick-dots li:only-child {
+    display: none;
+}
+
+#socios .slick-dots li button:before {
+    border-top: 4px solid black;
+    content: '';
+}
+
+#socios .arrow-btn {
+    height: 105px;
+    width: 22.5px;
+    background-color: #c5c7c7;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 52%;
+    padding: 0;
+}
+
+#socios .arrow-btn img {
+    width: 15px;
+}
+
+#socios .arrow-btn.arrow-right {
+    right: 77.5px;
+}
+
+#socios .arrow-btn.arrow-left {
+    left: 77.5px;
+}
+
+@media screen and (min-width: 1500px) {
+
+    #socios > .background-logo {
+        height: 580px;
+        top: -190px;
+    }
+
+    #socios .socios-row {
+        padding-top: 240px;
+    }
+
+    #socios .image-background {
+        height: 540px;
+        width: 360px;
+    }
+
+    #socios .socios-name {
+        width: 360px;
+    }
+
+    #socios .socios-curriculum {
+        font-size: 1.2em;
+    }
+
+    #socios .arrow-btn {
+        height: 140px;
+        width: 30px;
+    }
+
+    #socios .arrow-btn img {
+        width: 20px;
+    }
+
+    #socios .arrow-btn.arrow-right {
+        right: 70px;
+    }
+
+    #socios .arrow-btn.arrow-left {
+        left: 70px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #socios > .dark-rectangle {
+        width: 38vw;
+    }
+
+    #socios .socios-curriculum {
+        padding: 0 20px;
+    }
+
+    #socios .dark-rectangle > .section-title {
+        padding: 7px 0 7px 10vw;
+        margin-top: 120px;
+        width: 120%;
+    }
+
+    #socios .socios-row {
+        padding-top: 230px;
+    }
+
+    #socios > .background-logo {
+        height: 410px;
+        position: absolute;
+        right: -160px;
+        top: -200px;
+    }
+
+    #socios .slick-list  {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #socios .image-background {
+        height: 350px;
+        width: 215px;
+    }
+
+    #socios .socios-curriculum {
+        padding: 0 10px;
+    }
+
+    #socios .socios-name {
+        width: 215px;
+    }
+}

@@ -1,1 +1,86 @@
-Partner section here
+{% load staticfiles %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'slick/slick.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'slick/slick-theme.css' %}" />
+<link rel="stylesheet" href="{% static 'css/socios.css' %}">
+{% endblock %}
+
+<div class="dark-rectangle">
+    <div class="section-title">
+        <h2>Associados</h2>
+        <div class="title-line"></div>
+    </div>
+</div>
+<img class="background-logo" src="{% static 'assets/images/associados-logo.png' %}"
+    alt="Logo do Brito Alves, Lapenda & Bradley">
+<div class="socios-row">
+    <div class="socios-card">
+        <div class="image-background" style="background-image: url('{% static 'assets/media/photo4.jpg' %}')">
+            <div class="socios-curriculum">
+                <p>
+                    Currículo Currículo Currículo Currículo Currículo Currículo
+                    Currículo Currículo Currículo Currículo Currículo Currículo
+                    Currículo Currículo Currículo Currículo Currículo Currículo
+                    Currículo Currículo Currículo Currículo Currículo Currículo
+                </p>
+            </div>
+        </div>
+        <div class="socios-name">
+            <h3>Felipe Brito Alves</h3>
+        </div>
+    </div>
+    <div class="socios-card">
+        <div class="image-background" style="background-image: url('{% static 'assets/media/photo1.jpg' %}')">
+            <div class="socios-curriculum">
+                <p>
+                    OOOOOOOOO OOOOOOOOO OOOOOOOOO OOOOOOOOO OOOOOOOOO OOOOOOOOO
+                    OOOOOOOOO OOOOOOOOO OOOOOOOOO OOOOOOOOO OOOOOOOOO OOOOOOOOO
+                    OOOOOOOOO OOOOOOOOO OOOOOOOOO OOOOOOOOO OOOOOOOOO OOOOOOOOO
+                    OOOOOOOOO OOOOOOOOO OOOOOOOOO OOOOOOOOO OOOOOOOOO OOOOOOOOO
+                    OOOOOOOOO OOOOOOOOO OOOOOOOOO OOOOOOOOO OOOOOOOOO OOOOOOOOO
+                </p>
+            </div>
+        </div>
+        <div class="socios-name">
+            <h3>Fabiana Lapenda</h3>
+        </div>
+    </div>
+    <div class="socios-card">
+        <div class="image-background" style="background-image: url('{% static 'assets/media/photo2.jpg' %}')">
+            <div class="socios-curriculum">
+                <p>
+                    Currículo Currículo Currículo Currículo Currículo Currículo
+                    Currículo Currículo Currículo Currículo Currículo Currículo
+                    Currículo Currículo Currículo Currículo Currículo Currículo
+                    Currículo Currículo Currículo Currículo Currículo Currículo
+                    Currículo Currículo Currículo Currículo Currículo Currículo
+                    Currículo Currículo Currículo Currículo Currículo Currículo
+                </p>
+            </div>
+        </div>
+        <div class="socios-name">
+            <h3>Marina Bradley</h3>
+        </div>
+    </div>
+    <div class="socios-card">
+        <div class="image-background" style="background-image: url('{% static 'assets/media/photo3.jpg' %}')">
+            <div class="socios-curriculum">
+                <p>
+                    Currículo Currículo Currículo Currículo Currículo Currículo
+                    Currículo Currículo Currículo Currículo Currículo Currículo
+                    Currículo Currículo Currículo Currículo Currículo Currículo
+                    Currículo Currículo Currículo Currículo Currículo Currículo
+                    Currículo Currículo Currículo Currículo Currículo Currículo
+                    Currículo Currículo Currículo Currículo Currículo Currículo
+                </p>
+            </div>
+        </div>
+        <div class="socios-name">
+            <h3>Fulaninha de Tal</h3>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'slick/slick.min.js' %}"></script>
