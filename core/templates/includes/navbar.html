@@ -1,1 +1,27 @@
-Navbar here
+{% load staticfiles %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+{% endblock %}
+
+
+<div class="navbar">
+           
+    <img class="navbar_menusanduiche" src="{% static 'assets/icons/menu-button.svg' %}"  alt="logo">
+    
+    <div class="navbar_img">
+       <img src="{% static 'assets/images/LOGO.png' %}" class="navbar_img_img">  
+    </div>
+    <ul class="navbar_lista">
+      
+        <li class="navbar_lista_geral"><a href="#banner"> INÍCIO </a></li>
+        <li class="navbar_lista_web"><a href="#socios"> QUEM SOMOS </a></li>
+        <li class="navbar_lista_mobile"><a href="#diferencial"> ADVOCACIA ARTESANAL </a></li>
+        <li class="navbar_lista_mobile"><a href="#socios"> ASSOCIADOS </a></li>
+        <li class="navbar_lista_mobile"><a href="#institucional"> INSTITUCIONAL </a></li>
+        <li class="navbar_lista_geral"><a href="#servicos"> SERVIÇOS </a></li>
+        <li class="navbar_lista_geral"><a href="#contato"> CONTATOS </a></li>
+
+    </ul>
+    
+</div>
