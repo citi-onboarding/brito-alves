@@ -13,6 +13,8 @@
     background-color: #737373;
     position: absolute;
     bottom: -12px;
+    justify-content: flex-end;
+    min-width: 20vw;
 }
 
 #diferencial .section-title > h1 {
@@ -26,11 +28,12 @@
 #diferencial .section-title > .title-line {
     width: 100px;
     border-bottom: solid 2px white;
+    margin-left: 12px;
 }
 
 #diferencial > .section-text {
     font-weight: 300;
-    padding: 11vh 19vw 11vh 19vw;
+    padding: 11vh 19vw 21vh 19vw;
 }
 
 @media (max-width: 600px) {
@@ -47,10 +50,11 @@
     #diferencial .section-title > h1 {
         font-size: 1.4em;
         margin-right: 8px;
+        width: 100%;
     }
 
     #diferencial > .section-text {
-        padding: 9vh 15vw 9vh 15vw;
+        padding: 9vh 15vw 21vh 15vw;
     }
 
     #diferencial .section-title > .title-line {
@@ -58,5 +62,6 @@
         position: absolute;
         right: 0;
         bottom: 5px;
+        margin-left: 0;
     }
 }

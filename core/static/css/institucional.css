@@ -13,6 +13,8 @@
     background-color: #737373;
     position: absolute;
     bottom: -12px;
+    justify-content: flex-end;
+    min-width: 20vw;
 }
 
 #institucional .section-title > h1 {
@@ -26,10 +28,11 @@
 #institucional .section-title > .title-line {
     width: 100px;
     border-bottom: solid 2px white;
+    margin-left: 12px;
 }
 
-#institucional > .section-text {
-    font-weight: 300;
+#institucional > .section-text {margin-left: 12px;
+    font-weight: 300;margin-left: 12px;margin-left: 12px;
     padding: 11vh 19vw 11vh 19vw;
 }
 
@@ -47,9 +50,10 @@
     #institucional .section-title > h1 {
         font-size: 1.4em;
         margin-right: 8px;
+        width: 100%;
     }
 
-    #institucional > .section-text {
+    #institucional > .section-text {99
         padding: 9vh 15vw 9vh 15vw;
     }
 
@@ -58,5 +62,6 @@
         position: absolute;
         right: 0;
         bottom: 5px;
+        margin-left: 0;
     }
 }
