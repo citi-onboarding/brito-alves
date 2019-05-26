@@ -1,0 +1,101 @@
+footer#footer {
+    background-color: #E4E4E4;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    color: #707070;
+    padding: 0 10vw;
+}
+
+#footer > .footer-row-1,
+#footer > .footer-row-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer > .footer-row-1 {
+    padding: 6vh 0;
+}
+
+#footer .footer-row-1 > .footer-logo {
+    width: 40vh;
+}
+
+#footer .footer-row-1 > .footer-address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer .footer-address > .footer-city {
+    font-weight: 700;
+}
+
+#footer > .footer-row-2 {
+    padding: 12px 0;
+}
+
+#footer .footer-row-2 .citi-logo {
+    height: 1em;
+}
+
+#footer > hr {
+    border-width: 0.5px;
+    border-color: #C5C7C7;
+    margin: 0;
+}
+
+#footer .footer-address > .footer-map-btn {
+    text-decoration: none;
+    background-color: #3B3B3B;
+    color: white;
+    font-weight: 700;
+    font-size: 0.8em;
+    padding: 8px 40px;
+}
+
+@media screen and (min-width: 1500px) {
+    footer#footer {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    footer#footer {
+        padding: 0 5vw;
+    }
+
+    #footer > .footer-row-1 {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+        font-size: 1em;
+    }
+
+    #footer .footer-row-1 > .footer-logo {
+        width: 75vw;
+        height: initial;
+    }
+
+    #footer .footer-row-1 > .footer-address {
+        margin-top: 40px;
+    }
+
+    #footer .footer-address > .footer-map-btn {
+        font-size: 0.8em;
+        padding: 4px 8px;
+    }
+
+    #footer > .footer-row-2 {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        font-size: 12px;
+    }
+}
