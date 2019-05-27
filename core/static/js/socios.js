@@ -1,9 +1,4 @@
 $(document).ready(function () {
-  // $('.socios-row').on('init', function (event, slick) {
-  //   console.log('init');
-  //   let cards = $('.socios-card.slick-slide');
-  //   console.log(cards);
-  // });
   $('.socios-row').slick({
     dots: true,
     infinite: true,
