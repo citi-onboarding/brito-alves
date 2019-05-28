@@ -1,1 +1,53 @@
-Fiels of work section here
+{% load staticfiles %} {% block css %}
+<link rel="stylesheet" href="{% static 'css/servicos.css' %}">
+
+<link rel="stylesheet" type="text/css" href="{% static 'slick/slick.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'slick/slick-theme.css' %}"> {% endblock %}
+
+<div class="section-title">
+    <h1>Serviços</h1>
+    <div class="title-line"></div>
+</div>
+
+<div class="cards-wrapper">
+    {% for service in main_services %}
+    <div class="card">
+        <img src="{% static 'assets/icons/gavel.svg' %}" alt="" class="card-image">
+        <h2 class="card-title">{{ service.title }}</h2>
+        <p class="card-text">{{ service.description }}</p>
+    </div>
+    {% endfor %}
+</div>
+
+<div class="section-actions">
+    <a id="modal-btn">VER MAIS</a>
+</div>
+
+<div id="modal-wrapper">
+    <div class="modal">
+        <span id="close-btn"><img src="{% static 'assets/icons/cancel.svg' %}" class="icon"></span>
+        <div id="modal-slick">
+            {% for service in services %}
+            <div class="service">
+                <h2 class="service-title">
+                    {{ service.title }}
+                    <div class="title-line"></div>
+                </h2>
+                <p class="service-description">
+                    {{ service.text }}
+                </p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% block scripts %}
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="{% static 'slick/slick.min.js' %}"></script>
+<script type="text/javascript">
+    let static = "{% static 'assets' %}";
+</script>
+<script type="text/javascript" src="{% static 'js/servicos.js' %}"></script>
+{% endblock %}
