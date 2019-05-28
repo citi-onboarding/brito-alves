@@ -11,6 +11,8 @@
 
     <!-- CSS stylesheets archives link -->
     {% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'slick/slick.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'slick/slick-theme.css' %}" />
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     {% endblock %}
 
@@ -18,7 +20,7 @@
 </head>
 <body>
     <div class="wrapper">
-        
+
         <!-- Fixed navbar -->
         <nav class="nav" id="nav">
             {% include 'includes/navbar.html' %}
@@ -61,13 +63,14 @@
             <footer class="section" id="footer">
                 {% include 'includes/footer.html' %}
             </footer>
-            
+
         </div>
 
     </div>
 
     <!-- JavaScripts archives links -->
-    <script src="{% static 'js/balb.js' %}"></script>
-
+    <script type="text/javascript" src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'slick/slick.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/socios.js' %}"></script>
 </body>
 </html>

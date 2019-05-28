@@ -10,3 +10,7 @@ body{
 .section{
     border-bottom: 1px solid black;
 }
+
+.wrapper {
+    overflow-x: hidden;
+}
