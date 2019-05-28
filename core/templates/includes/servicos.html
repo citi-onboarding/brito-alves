@@ -12,7 +12,7 @@
 <div class="cards-wrapper">
     {% for service in main_services %}
     <div class="card">
-        <img src="{% static 'assets/icons/gavel.svg' %}" alt="" class="card-image">
+        <img src="{{ service.image.url }}" alt="" class="card-image">
         <h2 class="card-title">{{ service.title }}</h2>
         <p class="card-text">{{ service.description }}</p>
     </div>
@@ -41,13 +41,3 @@
         </div>
     </div>
 </div>
-
-{% block scripts %}
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="{% static 'slick/slick.min.js' %}"></script>
-<script type="text/javascript">
-    let static = "{% static 'assets' %}";
-</script>
-<script type="text/javascript" src="{% static 'js/servicos.js' %}"></script>
-{% endblock %}
