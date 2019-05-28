@@ -1,8 +1,5 @@
 {% load staticfiles %} {% block css %}
-<link rel="stylesheet" href="{% static 'css/servicos.css' %}">
-
-<link rel="stylesheet" type="text/css" href="{% static 'slick/slick.css' %}">
-<link rel="stylesheet" type="text/css" href="{% static 'slick/slick-theme.css' %}"> {% endblock %}
+<link rel="stylesheet" href="{% static 'css/servicos.css' %}"> {% endblock %}
 
 <div class="section-title">
     <h1>Serviços</h1>
@@ -12,7 +9,8 @@
 <div class="cards-wrapper">
     {% for service in main_services %}
     <div class="card">
-        <img src="{{ service.image.url }}" alt="" class="card-image">
+        {% if service.image %}
+        <img src="{{ service.image.url }}" alt="" class="card-image"> {% endif %}
         <h2 class="card-title">{{ service.title }}</h2>
         <p class="card-text">{{ service.description }}</p>
     </div>

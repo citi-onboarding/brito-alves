@@ -17,5 +17,6 @@ $('#modal-btn').click(function() {
 });
 
 $('#close-btn').click(function() {
+    $('#modal-slick').slick('unslick');
     $('#modal-wrapper').css("display", "none");
 });

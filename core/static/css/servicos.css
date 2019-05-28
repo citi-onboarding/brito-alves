@@ -40,6 +40,8 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+    align-self: center;
+    justify-content: flex-end;
     max-width: 230px;
 }
 
@@ -178,6 +180,9 @@
         right: 0;
         bottom: 5px;
         margin-left: 0;
+    }
+    #servicos>.cards-wrapper {
+        flex-direction: column;
     }
     #servicos>.cards-wrapper>.card {
         max-width: 280px;
