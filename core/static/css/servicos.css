@@ -54,6 +54,16 @@
     margin-bottom: 5px;
 }
 
+#servicos .show {
+    display: block;
+    opacity: 1;
+}
+
+#servicos .hidden {
+    display: none;
+    opacity: 0;
+}
+
 #servicos .cards-wrapper .card>.card-image {
     width: 120px;
     align-self: center;
@@ -132,6 +142,7 @@
     color: #EBE1E1;
     padding-bottom: 10px;
     text-transform: uppercase;
+    overflow-wrap: break-word;
 }
 
 #servicos .modal .service-title>.title-line {
@@ -148,6 +159,7 @@
     font-size: 0.8em;
     line-height: 1.75;
     margin: 4vh 7vw;
+    overflow-wrap: break-word;
 }
 
 #servicos .slick-prev,

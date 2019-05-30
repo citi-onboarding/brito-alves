@@ -1,5 +1,5 @@
 $('#modal-btn').click(function() {
-    $('#modal-wrapper').css("display", "block");
+    $('#modal-wrapper').fadeIn(300);
 
     $('#modal-slick').slick({
         nextArrow: `
@@ -17,6 +17,9 @@ $('#modal-btn').click(function() {
 });
 
 $('#close-btn').click(function() {
-    $('#modal-slick').slick('unslick');
+    //$('#modal-wrapper').hide();
+
     $('#modal-wrapper').css("display", "none");
+
+    $('#modal-slick').slick('unslick');
 });

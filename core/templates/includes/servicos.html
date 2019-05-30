@@ -12,7 +12,7 @@
         {% if service.image %}
         <img src="{{ service.image.url }}" alt="" class="card-image"> {% endif %}
         <h2 class="card-title">{{ service.title }}</h2>
-        <p class="card-text">{{ service.description }}</p>
+        <span class="card-text">{{ service.description }}</span>
     </div>
     {% endfor %}
 </div>
