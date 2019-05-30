@@ -1,6 +1,7 @@
 {% load staticfiles %}
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,11 +14,11 @@
     {% block css %}
     <link rel="stylesheet" type="text/css" href="{% static 'slick/slick.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'slick/slick-theme.css' %}" />
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    {% endblock %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"> {% endblock %}
 
     <title>{% block title %}Brito Alves, Lapenda & Bradley{% endblock %}</title>
 </head>
+
 <body>
     <div class="wrapper">
 
@@ -54,8 +55,8 @@
                 {% include 'includes/servicos.html' %}
             </section>
 
-             <!-- Section 6: Contact form -->
-             <section class="section" id="contato">
+            <!-- Section 6: Contact form -->
+            <section class="section" id="contato">
                 {% include 'includes/contato.html' %}
             </section>
 
@@ -69,8 +70,15 @@
     </div>
 
     <!-- JavaScripts archives links -->
+    {% block scripts %}
     <script type="text/javascript" src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'slick/slick.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/socios.js' %}"></script>
+    <script type="text/javascript">
+        let static = "{% static 'assets' %}";
+    </script>
+    <script type="text/javascript" src="{% static 'js/servicos.js' %}"></script>
+    {% endblock %}
 </body>
+
 </html>

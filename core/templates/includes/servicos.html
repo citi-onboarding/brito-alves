@@ -1,1 +1,41 @@
-Fiels of work section here
+{% load staticfiles %} {% block css %}
+<link rel="stylesheet" href="{% static 'css/servicos.css' %}"> {% endblock %}
+
+<div class="section-title">
+    <h1>Serviços</h1>
+    <div class="title-line"></div>
+</div>
+
+<div class="cards-wrapper">
+    {% for service in main_services %}
+    <div class="card">
+        {% if service.image %}
+        <img src="{{ service.image.url }}" alt="" class="card-image"> {% endif %}
+        <h2 class="card-title">{{ service.title }}</h2>
+        <span class="card-text">{{ service.description }}</span>
+    </div>
+    {% endfor %}
+</div>
+
+<div class="section-actions">
+    <a id="modal-btn">VER MAIS</a>
+</div>
+
+<div id="modal-wrapper">
+    <div class="modal">
+        <span id="close-btn"><img src="{% static 'assets/icons/cancel.svg' %}" class="icon"></span>
+        <div id="modal-slick">
+            {% for service in services %}
+            <div class="service">
+                <h2 class="service-title">
+                    {{ service.title }}
+                    <div class="title-line"></div>
+                </h2>
+                <p class="service-description">
+                    {{ service.text }}
+                </p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
