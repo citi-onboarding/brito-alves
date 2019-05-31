@@ -1,19 +1,13 @@
-{% load staticfiles %}
-
-{% block css %}
-    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-{% endblock %}
+{% load staticfiles %} {% block css %}
+<link rel="stylesheet" href="{% static 'css/footer.css' %}"> {% endblock %}
 
 <div class="footer-row-1">
     <img class="footer-logo" src="{% static 'assets/images/footer-logo.png' %}" alt="Logo do Brito Alves, Lapenda & Bradley">
     <div class="footer-address">
         <span class="footer-city">RECIFE</span>
         <p>
-            Rua do Paissandu, 567, 6º andar<br>
-            Paissandu<br>
-            CEP 52.010-000<br>
-            (81) 3447-7900<br>
+            Rua do Paissandu, 567, 6º andar<br> Paissandu
+            <br> CEP 52.010-000<br> (81) 3447-7900<br>
         </p>
         <a class="footer-map-btn" href="https://goo.gl/maps/PXpLaknQ9Vve7ECXA" target="_blank">VER MAPA</a>
     </div>
@@ -22,7 +16,7 @@
 <div class="footer-row-2">
     <span>&copy; 2019 CITi - Todos os direitos reservados</span>
     <span>
-        Made with <i class="fa fa-code"></i> and <i class="far fa-heart"></i> by 
-        <img class="citi-logo" src="{% static 'assets/images/citi-logo.png' %}" alt="Logo do CITi">
+        Made with <img class="icon" src="{% static 'assets/icons/code.svg' %}" alt="code icon"> and <img class="icon" src="{% static 'assets/icons/heart.svg' %}" alt="heart icon"> by 
+        <img class="icon" src="{% static 'assets/icons/citi.svg' %}" alt="CITi logo">
     </span>
 </div>

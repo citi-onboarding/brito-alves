@@ -1,16 +1,17 @@
-:root{
+:root {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
 }
 
-body{
+body {
     margin: 0;
-}
-
-.section{
-    border-bottom: 1px solid black;
 }
 
 .wrapper {
     overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url("../assets/fonts/segoe-ui.ttf");
 }
