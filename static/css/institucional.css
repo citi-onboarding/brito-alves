@@ -1,13 +1,13 @@
-#institucional > .section-image {
+#institucional>.section-image {
     height: 54vh;
     background-attachment: fixed;
-    background-image: url('../assets/images/institucional.png');
+    background-image: url('../assets/images/institucional.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
 }
 
-#institucional .section-image > .section-title {
+#institucional .section-image>.section-title {
     display: flex;
     padding: 7px 0 7px 19vw;
     background-color: #737373;
@@ -17,7 +17,7 @@
     min-width: 20vw;
 }
 
-#institucional .section-title > h1 {
+#institucional .section-title>h1 {
     margin: 2px;
     color: white;
     font-family: 'Roboto', sans-serif;
@@ -25,40 +25,36 @@
     font-size: 1.5em;
 }
 
-#institucional .section-title > .title-line {
+#institucional .section-title>.title-line {
     width: 100px;
     border-bottom: solid 2px white;
     margin-left: 12px;
 }
 
-#institucional > .section-text {
+#institucional>.section-text {
     margin-left: 12px;
     font-weight: 300;
     padding: 11vh 19vw 11vh 19vw;
 }
 
 @media (max-width: 600px) {
-    #institucional > .section-image {
+    #institucional>.section-image {
         height: 54vh;
     }
-
-    #institucional .section-image > .section-title {
+    #institucional .section-image>.section-title {
         min-width: 55vw;
         padding: 9px 0 9px 10vw;
         bottom: -15px;
     }
-
-    #institucional .section-title > h1 {
+    #institucional .section-title>h1 {
         font-size: 1.4em;
         margin-right: 8px;
         width: 100%;
     }
-
-    #institucional > .section-text {
+    #institucional>.section-text {
         padding: 9vh 15vw 9vh 15vw;
     }
-
-    #institucional .section-title > .title-line {
+    #institucional .section-title>.title-line {
         width: 90px;
         position: absolute;
         right: 0;
