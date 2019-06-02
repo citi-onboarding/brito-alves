@@ -1,1 +1,38 @@
-Contact section here
+{% load staticfiles %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/contato.css' %}">
+{% endblock %}
+
+<div class="section-title">
+    <h1>Contato</h1>
+    <div class="title-line"></div>
+</div>
+
+<div class="form-wrapper">
+    <form action="" class="form">
+        <div class="form-item">
+            <label for="name">Nome</label>
+            <input type="text" name="name" placeholder="Nome" id="name">
+        </div>
+
+        <div class="form-item">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" placeholder="E-mail" id="email">
+        </div>
+
+        <div class="form-item">
+            <label for="subject">Assunto</label>
+            <input type="text" name="subject" placeholder="Assunto" id="subject">
+        </div>
+
+        <div class="form-item">
+            <label for="message">Mensagem</label>
+            <textarea name="message" placeholder="Mensagem" id="message"></textarea>
+        </div>
+
+        <div class="form-actions">
+            <input type="submit" class="btn-submit" value="ENVIAR">
+        </div>
+    </form>
+</div>
