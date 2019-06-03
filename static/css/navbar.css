@@ -1,0 +1,116 @@
+nav#nav {
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#nav .navbar-web {
+    background-color: #C5C7C7;
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 5px 5vw;
+    width: 100%;
+}
+
+#nav .navbar-logo-web {
+    width: 140px;
+}
+
+#nav .navbar-list-web {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #707070;
+    height: 100%;
+    font-size: 1em;
+    list-style-type: none;
+}
+
+#nav .navbar-list-web > .navbar-item {
+    color: inherit;
+    padding-left: 50px;
+}
+
+#nav a {
+    text-decoration: none;
+    color: #707070
+}
+
+#nav .navbar-mobile {
+    display: none;
+}
+
+#nav .navbar-logo-mobile {
+    width: 250px;
+    padding-top: 7vh;
+}
+
+#nav .navbar-btn {
+    display: none;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+}
+
+#nav .navbar-sdw {
+    width: 30px;
+}
+
+@media (max-width: 770px) {
+    #nav .navbar-web {
+        display: none;
+    }
+
+    #nav .navbar-btn {
+        display: initial;
+        z-index: 200;
+    }
+
+    #nav .navbar-mobile {
+        position: fixed;
+        top: 0;
+        overflow-y: auto;
+        display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        background-color: #C5C7C7;
+        z-index: 100;
+    }
+
+    #nav .navbar-list-mobile {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        color: #707070;
+        align-items: center;
+        font-size: 1.4em;
+        list-style-type: none;
+        height: 267px;
+        position: relative;
+        padding-top: 13.49vh;
+        padding-left: 0px;
+    }
+
+    #nav .navbar-list-mobile > .navbar-item {
+        color: inherit;
+        padding: 0 15px;
+        border-bottom: 2px solid transparent;
+    }
+
+    #nav .navbar-list-mobile > .navbar-item:hover {
+        border-bottom: 2px solid #ffffff;
+    }
+}
