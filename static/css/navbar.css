@@ -4,6 +4,9 @@ nav#nav {
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 20;
 }
 
 #nav .navbar-web {
@@ -60,6 +63,7 @@ nav#nav {
     background-color: transparent;
     border: 0px;
     cursor: pointer;
+    z-index: 30;
 }
 
 #nav .navbar-sdw {
@@ -100,7 +104,7 @@ nav#nav {
         list-style-type: none;
         height: 267px;
         position: relative;
-        padding-top: 13.49vh;
+        padding-top: 10vh;
         padding-left: 0px;
     }
 
