@@ -1,1 +1,45 @@
-Navbar here
+{% load staticfiles %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+{% endblock %}
+
+<button class="navbar-btn" onclick="menuClick()">
+    <img class="navbar-sdw" src="{% static 'assets/icons/menu-button.svg' %}" alt="logo">
+</button>
+
+<div class="navbar-web">    
+    <img src="{% static 'assets/images/footer-logo.png' %}" class="navbar-logo-web">
+    
+    <ul class="navbar-list-web">
+        <li class="navbar-item"><a href="#banner">INÍCIO</a></li>
+        <li class="navbar-item"><a href="#socios">QUEM SOMOS</a></li>
+        <li class="navbar-item"><a href="#servicos">SERVIÇOS</a></li>
+        <li class="navbar-item"><a href="#contato">CONTATO</a></li>
+    </ul>
+</div>
+
+<div class="navbar-mobile">
+    <img src="{% static 'assets/images/footer-logo.png' %}" class="navbar-logo-mobile">
+
+    <ul class="navbar-list-mobile">
+        <li class="navbar-item" onclick="fechar()">
+            <a href="#banner">INÍCIO</a>
+        </li>
+        <li class="navbar-item" onclick="fechar()">
+            <a href="#diferencial">ADVOCACIA ARTESANAL</a>
+        </li>
+        <li class="navbar-item" onclick="fechar()">
+            <a href="#socios">ASSOCIADOS</a>
+        </li>
+        <li class="navbar-item" onclick="fechar()">
+            <a href="#institucional">INSTITUCIONAL</a>
+        </li>
+        <li class="navbar-item" onclick="fechar()">
+            <a href="#servicos">SERVIÇOS</a>
+        </li>
+        <li class="navbar-item" onclick="fechar()">
+            <a href="#contato">CONTATO</a>
+        </li>
+    </ul>
+</div>
