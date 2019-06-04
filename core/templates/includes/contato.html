@@ -40,5 +40,8 @@
 </div>
 
 {% for message in messages %}
-<script>alert('{{ message }}');</script>
+<script>
+    window.location.href = "#contato";
+    alert('{{ message }}');
+</script>
 {% endfor %}

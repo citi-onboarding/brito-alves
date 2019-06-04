@@ -4,20 +4,22 @@ from django.template import loader
 from django.contrib import messages
 from django.core.mail import send_mail
 
-from core.models import Associado, AreaDeAtuacao
+from core.models import Associado, AreaDeAtuacao, Institucional
 
 
 def index(request):
-
     partners = Associado.objects.order_by('order')
     services = AreaDeAtuacao.objects.order_by('order')
+    intitutional = Institucional.objects.all()[:1]
+
     context = {
         'main_services' : services[:3],
         'services' : services,
         'partners': partners,
+        'intitutional' : intitutional[0],
     }
 
-    return render(request, 'index.html', context)
+    return render(request, 'index.html', context,)
 
 
 def mail_sender(request):
