@@ -10,13 +10,13 @@ from core.models import Associado, AreaDeAtuacao, Institucional
 def index(request):
     partners = Associado.objects.order_by('order')
     services = AreaDeAtuacao.objects.order_by('order')
-    intitutional = Institucional.objects.all()[:1]
+    intitutional = Institucional.objects.all()
 
     context = {
         'main_services' : services[:3],
         'services' : services,
         'partners': partners,
-        'intitutional' : intitutional[0],
+        'intitutional' : intitutional[0] if len(intitutional) > 0 else '',
     }
 
     return render(request, 'index.html', context,)
