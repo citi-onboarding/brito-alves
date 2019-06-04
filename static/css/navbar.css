@@ -19,10 +19,31 @@ nav#nav {
     align-content: center;
     padding: 5px 5vw;
     width: 100%;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
 }
 
 #nav .navbar-logo-web {
     height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#nav .navbar-logo-web > .logo-only {
+    margin: 0 auto;
+    height: 6vh;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+#nav .navbar-logo-web > .logo-name {
+    height: 2vh;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
 }
 
 #nav .navbar-list-web {
