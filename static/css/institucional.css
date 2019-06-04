@@ -1,7 +1,7 @@
 #institucional>.section-image {
     height: 54vh;
     background-attachment: fixed;
-    background-image: url('../assets/images/institucional.jpg');
+    background-image: url('../assets/images/advocacia-artesanal.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -32,9 +32,8 @@
 }
 
 #institucional>.section-text {
-    margin-left: 12px;
     font-weight: 300;
-    padding: 11vh 19vw 11vh 19vw;
+    padding: 11vh 19vw 21vh 19vw;
 }
 
 @media (max-width: 600px) {
@@ -52,7 +51,7 @@
         width: 100%;
     }
     #institucional>.section-text {
-        padding: 9vh 15vw 9vh 15vw;
+        padding: 9vh 15vw 21vh 15vw;
     }
     #institucional .section-title>.title-line {
         width: 90px;
