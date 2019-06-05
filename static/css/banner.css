@@ -1,5 +1,6 @@
 section#banner {
-    background-image: url('../assets/images/banner-background.png');
+    /* background-image: url('../assets/images/banner-background.png'); */
+    background-color: black;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,7 +12,7 @@ section#banner {
     align-items: center;
 }
 
-#banner .banner-row-2 > .banner-logo {
+#banner .banner-row-2>.banner-logo {
     max-height: 40vh;
 }
 
@@ -31,7 +32,7 @@ section#banner {
     margin-bottom: 20px;
 }
 
-#banner .banner-row-2 > .banner-logo-mobile {
+#banner .banner-row-2>.banner-logo-mobile {
     display: none;
 }
 
@@ -41,13 +42,11 @@ section#banner {
         height: 100vh;
         justify-content: start;
     }
-
     #banner .banner-cta,
-    #banner .banner-row-2 > .banner-logo {
+    #banner .banner-row-2>.banner-logo {
         display: none;
     }
-
-    #banner .banner-row-2 > .banner-logo-mobile {
+    #banner .banner-row-2>.banner-logo-mobile {
         display: initial;
         width: 85vw;
         margin-top: 10vh;
