@@ -1,17 +1,13 @@
-{% load staticfiles %}
-
-{% block css %}
-<link rel="stylesheet" href="{% static 'css/socios.css' %}">
-{% endblock %}
+{% load staticfiles %} {% block css %}
+<link rel="stylesheet" href="{% static 'css/socios.css' %}"> {% endblock %}
 
 <div class="dark-rectangle">
     <div class="section-title">
-        <h2>Associados</h2>
+        <h2>Sócios</h2>
         <div class="title-line"></div>
     </div>
 </div>
-<img class="background-logo" src="{% static 'assets/images/associados-logo.png' %}"
-    alt="Logo do Brito Alves, Lapenda & Bradley">
+<img class="background-logo" src="{% static 'assets/images/associados-logo.png' %}" alt="Logo do Brito Alves, Lapenda & Bradley">
 <div class="socios-row">
     {% for partner in partners %}
     <div class="socios-card">
