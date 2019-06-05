@@ -2,7 +2,6 @@ $('a[href*="#"]')
     .not('[href="#"]')
     .not('[href="#0"]')
     .click(function(event) {
-        console.log('teste');
         if (
             location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
             location.hostname == this.hostname
