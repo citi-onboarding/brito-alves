@@ -30,3 +30,14 @@ class Associado(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Institucional(models.Model):
+    text = models.TextField("Texto sobre a empresa")
+
+    class Meta:
+        verbose_name = "Institucional"
+        verbose_name_plural = "Institucional"
+
+    def __str__(self):
+        return self.text
