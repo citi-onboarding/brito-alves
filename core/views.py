@@ -33,7 +33,7 @@ def mail_sender(request):
         subject,
         message,
         'balb.contact@gmail.com',
-        ['balb.contact@gmail.com'],
+        ['institucional@balb.adv.br'],
         fail_silently=True,
         html_message=message,
     )
