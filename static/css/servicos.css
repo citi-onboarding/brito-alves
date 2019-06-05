@@ -161,6 +161,7 @@
     margin: 4vh 7vw;
     overflow-wrap: break-word;
     font-family: 'Segoe UI', sans-serif;
+    text-align: justify;
 }
 
 #servicos .slick-prev,
@@ -219,12 +220,15 @@
     #servicos>.section-actions {
         margin-top: 15px;
     }
+    #servicos>#modal-wrapper {
+        z-index: 300;
+    }
     #servicos .section-actions>#modal-btn {
         font-size: 1.1em;
         padding: 8px 20px;
     }
     #servicos #modal-wrapper>.modal {
-        margin: 10vh 13vw 0 13vw;
+        margin: 7vh 6vw 0 6vw;
     }
     #servicos .modal .service-title {
         font-size: 1.8em;
