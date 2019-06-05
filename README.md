@@ -50,7 +50,7 @@ source venv/bin/activate
 Enter the project folder
 
 ```
-cd Symvoulos
+cd balb
 ```
 
 Install the riquirements for the project
