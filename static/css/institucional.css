@@ -34,6 +34,8 @@
 #institucional>.section-text {
     font-weight: 300;
     padding: 11vh 19vw 21vh 19vw;
+    line-height: 1.4;
+    text-align: justify;
 }
 
 @media (max-width: 600px) {
