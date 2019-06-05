@@ -97,8 +97,14 @@ nav#nav {
     }
 
     #nav .navbar-btn {
-        display: initial;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         z-index: 200;
+        border-radius: 2px;
+        transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -webkit-transition: all .2s ease-in-out;
     }
 
     #nav .navbar-mobile {
