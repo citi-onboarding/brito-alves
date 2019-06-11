@@ -1,6 +1,10 @@
 $('#modal-btn').click(function() {
     $('#modal-wrapper').fadeIn(300);
 
+    if ($(window).width() <= 600){
+        $('body').css('overflow', 'hidden');
+    }
+
     $('#modal-slick').slick({
         nextArrow: `
     <button class="slick-next" type="button" style="display: block;">
@@ -17,9 +21,9 @@ $('#modal-btn').click(function() {
 });
 
 $('#close-btn').click(function() {
-    //$('#modal-wrapper').hide();
+    $('body').css('overflow', 'auto');
 
-    $('#modal-wrapper').css("display", "none");
+    $('#modal-wrapper').css('display', 'none');
 
     $('#modal-slick').slick('unslick');
 });
