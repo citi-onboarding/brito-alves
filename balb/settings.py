@@ -135,7 +135,8 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'balb.contact@gmail.com'
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 
-SECURE_SSL_REDIRECT = True
+if config('SECURE_SSL_REDIRECT') == 'True':
+    SECURE_SSL_REDIRECT = True
 
 # Django-heroku configuration
 import django_heroku
