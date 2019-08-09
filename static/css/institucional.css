@@ -38,6 +38,12 @@
     text-align: justify;
 }
 
+@media (max-width: 1024px) {
+    #institucional>.section-image {
+        background-attachment: initial;
+    }
+}
+
 @media (max-width: 600px) {
     #institucional>.section-image {
         height: 54vh;
